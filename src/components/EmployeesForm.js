@@ -54,54 +54,70 @@ function EmployeesForm() {
    
     
 return (
-    <form onSubmit={handleSubmit}>
-      <input name='id'
+    <form onSubmit={handleSubmit} className="bg-zinc-800 max-w-sn p-4">
+      <label htmlFor="title" className="block-text-sm font-bold">Empleado: </label>
+      <input className="w-full p-2 rounded-md bg-zinc-600 mb-2" 
+             name='id'
              type="text"
              placeholder="Nombre"
              onChange={handleChange}
              value={employee.id}
         />
-      <input name='First_Name'
+      <label htmlFor="title" className="block-text-sm font-bold">Nombre: </label>
+      <input className="w-full p-2 rounded-md bg-zinc-600 mb-2"
+             name='First_Name'
              type="text"
              placeholder="Nombre"
              onChange={handleChange}
              value={employee.First_Name}
         />
-      <input name='Last_Name'
+      <label htmlFor="title" className="block-text-sm font-bold" >Apellido: </label>
+      <input className="w-full p-2 rounded-md bg-zinc-600 mb-2"
+             name='Last_Name'
              type="text"
              placeholder="Apellido"
              onChange={handleChange}
              value={employee.Last_Name}
         />
-      <input name='Email'
+      <label htmlFor="title" className="block-text-sm font-bold">Email: </label>
+      <input className="w-full p-2 rounded-md bg-zinc-600 mb-2"
+             name='Email'
              type="text"
              placeholder="Email"
              onChange={handleChange}
              value={employee.Email}
         />
-      <input name='Hire_Date'
+      <label htmlFor="title" className="block-text-sm font-bold">Fecha de Contratacion: </label>  
+      <input className="w-full p-2 rounded-md bg-zinc-600 mb-2"
+             name='Hire_Date'
              type="text"
              placeholder="Fecha de Contrato"
              onChange={handleChange}
              value={employee.Hire_Date}
         />
-      <input name='Salary'
+      <label htmlFor="title" className="block-text-sm font-bold">Salario: </label>
+      <input className="w-full p-2 rounded-md bg-zinc-600 mb-2"
+             name='Salary'
              type="text"
              placeholder="Salario"
              onChange={handleChange}
              value={employee.Salary}
         />
-      <input name='Comission_PCT'
+      <label htmlFor="title" className="block-text-sm font-bold">Porcentaje Comision: </label>  
+      <input className="w-full p-2 rounded-md bg-zinc-600 mb-2"
+             name='Comission_PCT'
              type="text"
              placeholder="Comision"
              onChange={handleChange}
              value={employee.Commission_PCT}
         />
-      <textarea name="description"
+      <textarea className="w-full p-2 rounded-md bg-zinc-600 mb-2" 
+                name="description"
                 placeholder="Informacion Extra"
                 onChange={handleChange}>
        </textarea>
-      <button>Guardar</button>
+      <button className="bg-indigo-500 px-2 py-1">Guardar</button>
+      <button className="bg-red-500 px-2 py-1">Cancelar</button>
     </form>
    )
   

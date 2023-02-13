@@ -20,8 +20,9 @@ function EmployeesList() {
    return (
     
     <div class='w-4/6' display="flex "justifyContent='center'>
-        <h1><c>Empleados Distinguidos!</c></h1>
-        <header className='flex justify-center'> 
+        <h1><center>CRUD DE EMPLEADOS!</center></h1>
+        <header className="flex justify-center rounded-sm text-pm"> 
+        
         <h2>
         <Link to="/create-employee" 
         className="bg-indigo-600 px-2 py-1 rounded-sm text-sm"
@@ -35,7 +36,7 @@ function EmployeesList() {
             <div key={employee.id} className="bg-neutral-400 p-5 rounded-md">
                 <div >
                 <header className="flex justify-between">
-                <h4>{employee.First_Name}</h4>
+                <h6>{employee.First_Name}</h6>
                 </header>    
                 
                 <p>{employee.Last_Name}</p>
@@ -54,7 +55,7 @@ function EmployeesList() {
                 
                  </div>       
             </div>
-        ))};
+        ))}
         </div>            
     </div>
   )
