@@ -44,11 +44,13 @@ function EmployeesForm() {
      navigate('/');
        
   };
-     useEffect(() => {
-      if (params.id) {
-        setEmployee(employees.find(employee => employee.id === params.id));
-      }
-     },[]);
+  useEffect(() => {
+    if (params.id) {
+      setEmployee(employees.find(employee => employee.id === params.id));
+    }
+   },[]);
+      
+    
    
     
 return (

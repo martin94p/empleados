@@ -44,15 +44,16 @@ reducers: { //aca puedo poner cualquier funcion y llamarla desde cualquier lado
   },
   editEmployee: (state, action) => {
     const {id, First_Name, Last_Name, Email, Hire_Date, Salary, Commission_PCT}= action.payload
-    const employeeFind = state.find(employee => employee.id === id);
-    if (employeeFind) {
-      
-      employeeFind.First_Name =First_Name;
-      employeeFind.Last_Name =Last_Name;
-      employeeFind.Email =Email;
-      employeeFind.Hire_Date =Hire_Date;
-      employeeFind.Salary =Salary;
-      employeeFind.Commission_PCT=Commission_PCT;
+    const employeeFound = state.find(employee => employee.id === id)
+    
+    if (employeeFound) {
+    employeeFound.First_Name =First_Name;
+    employeeFound.Last_Name =Last_Name;
+    employeeFound.Email =Email;
+    employeeFound.Hire_Date =Hire_Date;
+    employeeFound.Salary =Salary;
+    employeeFound.Commission_PCT=Commission_PCT;
+    state.push(action.payload)
     }
     },
     
