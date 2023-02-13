@@ -1,3 +1,27 @@
+Hola! Bienvenido a la app de CRUD Empleados Vortex V1.0!
+
+Autor> Leandro Martin Perez Petruzzi, estudiante Akademi Vortex 2023
+Tutores> Mariano Tamagnone & Jose Puente. (GRACIAS POR SU PACIENCIA :))
+
+
+Estructurado> La App consiste en implementar la tecnologia REACT REDUX a traves de su implementacion facilitando a traves de un Store que administre con React-DOM-Router, la creacion de los siguientes componentes y devuelva un State actualizado: 
+ 
+ tecnologias utilizadas> 
+ Estilo aplicado> @tailwind base;
+ 
+ * EmployeesForm.js (input form)
+    'react'; 'react-redux'; 'uuid' (libreria para establecer un unico id) & 'react-router-dom';
+ 
+ * EmployeesList
+   'react-redux'
+
+
+*-* Puntos a tener en cuenta para la carga de datos
+    > falta implementar validaciones para caracteres especiales y condiciones.
+    > Datos estaticos en los primeros 3 objetos
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -10,9 +34,6 @@ In the project directory, you can run:
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
 ### `npm test`
 
@@ -69,16 +90,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-
-Estructura basica>
-
-descripcion >
-
-CRUD implementacion de redux
-todos los datos son cargados, son estaticos
-
-Api usadas>
-
-librerias utilizadas>
-
-Autor>
